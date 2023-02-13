@@ -74,5 +74,5 @@ I would expect the following output:
     Fly Buys Blue: 6014709045001234 (valid)
     Fly Buys Red: 6014352700000140 (valid)
     Fly Buys Green: 6014355526000020 (valid)
-    Fly Buys Green: 6014355526000028 (invalid)
+    Fly Buys Green: 6014355529000028 (invalid)
     Unknown: 6013111111111111 (invalid)
