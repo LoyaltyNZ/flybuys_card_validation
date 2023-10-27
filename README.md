@@ -10,20 +10,20 @@ You will be required to talk through your solution at the interview.
 
 ## Problem
 
-We want to identify different Fly Buys cards by running some sanity checks on the card number.
+We want to identify different Flybuys cards by running some sanity checks on the card number.
 
 A common check that is performed upfront is to validate the card type based on the starting digits and length of card number. The main patterns that we care about are as follows:
 
     +=================+==============================+===============+
     | Card Type       | Begins With                  | Number Length |
     +=================+==============================+===============+
-    | Fly Buys Black  | 60141                        | 16, 17        |
+    | Flybuys Black  | 60141                        | 16, 17        |
     +-----------------+------------------------------+---------------+
-    | Fly Buys Red    | 6014352                      | 16            |
+    | Flybuys Red    | 6014352                      | 16            |
     +-----------------+------------------------------+---------------+
-    | Fly Buys Green  | 6014355526 - 6014355529      + 16            |
+    | Flybuys Green  | 6014355526 - 6014355529      + 16            |
     +-----------------+------------------------------+---------------+
-    | Fly Buys Blue   | Every other card number      | 16            |
+    | Flybuys Blue   | Every other card number      | 16            |
     |                 | starting with 6014           |               |
     +-----------------+------------------------------+---------------+
 
@@ -51,11 +51,11 @@ This card is not valid.
 
 ## Task
 
-Your task is to write a ruby program that accepts Fly Buys card numbers. Card numbers must be passed in line by line (one set of numbers per line). The program should print the card in the following format <code>"TYPE: NUMBERS (VALIDITY)"</code>.
+Your task is to write a ruby program that accepts Flybuys card numbers. Card numbers must be passed in line by line (one set of numbers per line). The program should print the card in the following format <code>"TYPE: NUMBERS (VALIDITY)"</code>.
 
 ## Input and Output
 
-Given the following Fly Buys cards:
+Given the following Flybuys cards:
 
     60141016700078611
     6014152705006141
@@ -68,11 +68,11 @@ Given the following Fly Buys cards:
 
 I would expect the following output:
 
-    Fly Buys Black: 60141016700078611 (valid)
-    Fly Buys Black: 6014152705006141 (invalid)
-    Fly Buys Black: 6014111100033006 (valid)
-    Fly Buys Blue: 6014709045001234 (valid)
-    Fly Buys Red: 6014352700000140 (valid)
-    Fly Buys Green: 6014355526000020 (valid)
-    Fly Buys Green: 6014355529000028 (invalid)
+    Flybuys Black: 60141016700078611 (valid)
+    Flybuys Black: 6014152705006141 (invalid)
+    Flybuys Black: 6014111100033006 (valid)
+    Flybuys Blue: 6014709045001234 (valid)
+    Flybuys Red: 6014352700000140 (valid)
+    Flybuys Green: 6014355526000020 (valid)
+    Flybuys Green: 6014355529000028 (invalid)
     Unknown: 6013111111111111 (invalid)
