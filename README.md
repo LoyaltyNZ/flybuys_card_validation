@@ -76,3 +76,22 @@ I would expect the following output:
     Flybuys Green: 6014355526000020 (valid)
     Flybuys Green: 6014355529000028 (invalid)
     Unknown: 6013111111111111 (invalid)
+
+
+
+## Investigation/planning
+Initial considerations:
+It shouldn't be too hard to come up with a solution/s for this but whats a better way to architect a solution for a company like Loyalty?
+The main issue that keeps coming to my mind is that there is likely a lot of existing systems out there that deal with cards/card types/validations (other loyalty systems, credit/bank cards...) that could be beneficial to use or model after but they may not cover the particular challenges this system has to deal with. In terms of domains/subdomains, what is core to this loyalty scheme and what is generic?
+I likely need a solution that is tailored but still similar/compatible enough to other systems.
+
+Objectives:
+- Evaluate existing solutions and relevance to this project
+- Employ some Domain Analysis - identifying core aspects required vrs generic functionalities
+- Build out a simple functional MVP within a reasonable time - a system designed to handle the identification, validation, and categorization of card numbers
+- Separate concerns, keep it modular, adhere to the Single Responsibility Principle
+- Follow a TDD approach to iteratively develop features, I'll be learning as I go
+- Include validations
+- Include error handling
+- Include documentation
+- Consider how functionality may be expanded upon later
