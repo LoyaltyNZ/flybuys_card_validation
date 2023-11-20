@@ -4,16 +4,9 @@ RSpec.describe CardNumberProcessor do
   let(:valid_black_card_number_16_digits) { '6014111100033006' }
   let(:valid_black_card_number_17_digits) { '60141016700078611' }
   let(:invalid_black_card_number) { '6014152705006141' }
-
   let(:valid_red_card_number) { '6014352700000140' }
-  let(:invalid_red_card_number) { '' }
-
   let(:valid_green_card_number) { '6014355526000020' }
-  let(:invalid_green_card_number) { '6014355529000028' }
-
   let(:valid_blue_card_number) { '6014709045001234' }
-  let(:invalid_blue_card_number) { '60141016700078611' }
-
   let(:unknown_card_number) { '6013111111111111' }
   
   describe '#initialize' do
@@ -92,7 +85,7 @@ RSpec.describe CardNumberProcessor do
     end
 
     it 'handles invalid card numbers appropriately' do
-      processor = CardNumberProcessor.new(valid_black_card_number_16_digits)
+      processor = CardNumberProcessor.new(invalid_black_card_number)
 
       expect(processor.valid?).to eq('invalid')
     end
