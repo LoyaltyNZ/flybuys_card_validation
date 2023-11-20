@@ -95,3 +95,9 @@ Objectives:
 - Include error handling
 - Include documentation
 - Consider how functionality may be expanded upon later
+
+
+Findings:
+A quick search on card validation in general revealed information on the Luhn algorithm, which initially looked like the same validation process as the requirements for this project, as well as various gems that may have been useful.
+Closer inspection showed differences between the Luhn algorithm and his projects requirements, and many of the gems dealt with determining credit card types in particular.
+This affirmed my initial thoughts, I think it will be more useful to continue along with a tailored app approach, focus on the architecture that can be used to build from.
