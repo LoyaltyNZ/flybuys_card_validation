@@ -1,7 +1,7 @@
 class CardNumberProcessor
   def initialize(card_number)
     initial_validation(card_number)
-    @card_number = card_number
+    @card_number = card_number.delete(' \t\n')
   end
   
   def card_type
